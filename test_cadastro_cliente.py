@@ -1,5 +1,5 @@
-from Cliente import Cliente
-from CadastroCliente import CadastroCliente
+from cliente import Cliente
+from cadastro_cliente import CadastroCliente
 
 
 def test_cliente_cadastrado():
@@ -14,6 +14,7 @@ def test_menor_de_idade():
     cadastro_cliente = CadastroCliente()
     resposta = cadastro_cliente.cadastrar_cliente(cliente)
     assert "Cliente menor de idade" == resposta
+
 
 def test_email_valido():
     cliente = Cliente('Ana', 18, 'teste erro')
