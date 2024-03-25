@@ -14,3 +14,9 @@ def test_menor_de_idade():
     cadastro_cliente = CadastroCliente()
     resposta = cadastro_cliente.cadastrar_cliente(cliente)
     assert "Cliente menor de idade" == resposta
+
+def test_email_valido():
+    cliente = Cliente('Ana', 18, 'teste erro')
+    cadastro_cliente = CadastroCliente()
+    resposta = cadastro_cliente.cadastrar_cliente(cliente)
+    assert "Email invalido" == resposta
