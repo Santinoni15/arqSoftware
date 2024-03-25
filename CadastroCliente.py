@@ -4,4 +4,6 @@ class CadastroCliente:
 
     def cadastrar_cliente(self, cliente):
         self.clientes_cadastrados.append(cliente)
-        return "Cadastrado com sucesso"
+
+        if len(self.clientes_cadastrados) > 0: #conferir se esta realmente cadastrando.
+            return "Cadastrado com sucesso"
